@@ -1,0 +1,36 @@
+{% extends 'layout.html' %}
+
+{% block title %}dealer{% endblock %}
+
+{% block content %}
+<div class="col-md-10 pl-md-9 ftco">
+<h2>dealer</h2>
+<div>
+<p>advertisements:</p>
+<div class = 'container' style = 'min-height: 100%'>
+<i class="fas fa-tick"></i><div id="msgsuccess" style="color:green">{{msgsuccess}}</div>
+	<div class = 'row'>
+		<div class = 'col' style = 'width: 50%'>
+		<a href = '#' style='text-decoration:none'><h4>tractor for sale</h4>
+		<img src = 'static/placeholder.jpg' style = 'width: 60px; height: 60px; border:2px'>
+		<p>1994 kia tractor</p></a>
+		<p style = 'color:red'>Price: $4000</p>
+		<hr style = 'width: 90%'><br>
+		
+		<a href = '#' style='text-decoration:none'><h4>water tanks for sale</h4>
+		<img src = 'static/placeholder.jpg' style = 'width: 60px; height: 60px; border:2px'>
+		<p>5000l mega tanks</p></a>
+		<p style = 'color:red'>Price: $400</p>
+		<hr style = 'width: 90%'><br>
+		
+		<a href = '#' style='text-decoration:none'><h4>actioning combine harvest</h4>
+		<img src = 'static/placeholder.jpg' style = 'width: 60px; height: 60px; border:2px'>
+		<p>Hyundai HRC750F</p></a>
+		<p style = 'color:red'>starting price: $10,000</p>
+		<hr style = 'width: 90%'><br>
+		</div>
+</div>
+</div>
+</div>
+{% endblock %}	
+	

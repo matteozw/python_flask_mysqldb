@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+{% block content %}
+<div class="col-md-10 pl-md-9 ftco">
+<h3>All users</h3>
+{% for i in result %}
+<div><li> Username: {{i[1]}}<p style="margin-left: 47px;"> email: {{i[3]}}</p></li></div>
+{% endfor %}
+</div>
+<div>{{passwd}}</div>
+{% endblock %}

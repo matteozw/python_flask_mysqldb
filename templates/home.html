@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="col-md-10 pl-md-9 ftco">
+    <h2>Home Page</h2>
+    <div class="section">
+        <p>Welcome back, {{ session['username'] }}!</p>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+                <link href="static/style.css" rel="stylesheet" type="text/css">
+		<title>Sign In</title>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+	</head>
+	<body>
+		<div class="login">
+			<h1>Sign In</h1>
+			<div id="msg" style="color:red">{{msg}}</div>
+			<form action="/secure-login" method="post">
+				<label for="username">
+					<i class="fas fa-user"></i>
+				</label>
+				<input type="text" name="username" placeholder="Username" id="username" required>
+				<label for="password">
+					<i class="fas fa-lock"></i>
+				</label>
+				<input type="password" name="password" placeholder="Password" id="password" required>
+				<input type="hidden" value="This$#is#$my#$Secret@#Key!@#" name="form_secure" id="form_secure">
+				<input type="submit" value="Login">
+				<div><a style="color:green" href="{{url_for('signup')}}">Not registered, Register now!</a></div>
+				
+				
+			</form>
+		</div>
+	</body>
+</html>
